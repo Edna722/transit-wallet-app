@@ -3,6 +3,7 @@
 # Install essential packages
 apt-get update && apt-get install -y \
   build-essential \
+  coreutils \
   curl \
   git \
   unzip \
@@ -11,6 +12,12 @@ apt-get update && apt-get install -y \
   libglu1-mesa \
   lib32stdc++6 \
   lib32z1
+
+# Install RVM (Ruby Version Manager) if required
+if ! command -v rvm &> /dev/null; then
+  curl -sSL https://get.rvm.io | bash -s stable
+  source /etc/profile.d/rvm.sh
+fi
 
 # Install Flutter SDK
 if [ ! -d "$FLUTTER_HOME" ]; then
