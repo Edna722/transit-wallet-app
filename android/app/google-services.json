@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "813839744728",
+    "project_id": "transitwallet-5e782",
+    "storage_bucket": "transitwallet-5e782.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813839744728:android:de985b6347d69b50fd21ad",
+        "android_client_info": {
+          "package_name": "com.example.transitwallet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdGv2DEn2vKBu4sAoZLy6GmLuZ4Z0xjxI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
