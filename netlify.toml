@@ -2,10 +2,16 @@
   base = "/"
   publish = "build/web"
   command = "bash ./build.sh"
+  environment = { YARN_VERSION = "1.22.10" }
 
 [build.environment]
   FLUTTER_HOME = "/opt/flutter"
   PATH = "/opt/flutter/bin:/opt/flutter/bin/cache/dart-sdk/bin:$PATH"
+
+[context.production.environment]
+  NODE_VERSION = "14"
+  NPM_VERSION = "6"
+  YARN_VERSION = "1.22.10"
 
 [[plugins]]
   package = "@netlify/plugin-functions-install-core"
