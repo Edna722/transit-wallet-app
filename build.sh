@@ -1,7 +1,12 @@
 #!/bin/bash
 
-# Install essential packages
-apt-get update && apt-get install -y \
+# Ensure we have sudo privileges
+if ! command -v sudo &> /dev/null; then
+  apt-get update && apt-get install -y sudo
+fi
+
+# Update package list and install essential packages
+sudo apt-get update && sudo apt-get install -y \
   build-essential \
   coreutils \
   curl \
