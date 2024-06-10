@@ -1,0 +1,3 @@
+[submodule "transitwallet_app"]
+    path = transitwallet_app
+    url = https://github.com/Edna722/transitwallet_app.git
