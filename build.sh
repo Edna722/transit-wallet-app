@@ -24,6 +24,10 @@ if ! command -v rvm &> /dev/null; then
   source /etc/profile.d/rvm.sh
 fi
 
+# Install Ruby version 
+rvm install 2.7.2
+rvm use 2.7.2 --default 
+
 # Install Flutter SDK
 if [ ! -d "$FLUTTER_HOME" ]; then
   git clone https://github.com/flutter/flutter.git -b stable $FLUTTER_HOME
