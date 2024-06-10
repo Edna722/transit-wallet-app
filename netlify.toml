@@ -2,7 +2,6 @@
   base = "/"
   publish = "build/web"
   command = "bash ./build.sh"
-  environment = { YARN_VERSION = "1.22.10" }
 
 [build.environment]
   FLUTTER_HOME = "/opt/flutter"
